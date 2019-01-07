@@ -1,4 +1,4 @@
 #!/bin/bash
 for i in $@; do
-    pngcrush -reduce -brute -bail -ow $i `mktmp`
+    pngcrush -reduce -bail -ow $i `mktemp`
 done
