@@ -1,0 +1,6 @@
+-   id: pngcrush-docker
+    name: pngcrush (via docker)
+    description: Compress png images with pngcrush
+    language: docker-image
+    entry: gaiagps/pngcrush:latest
+    files: \.png$
