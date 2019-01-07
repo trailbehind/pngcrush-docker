@@ -1,4 +1,7 @@
 #!/bin/bash
 for i in $@; do
-    pngcrush -reduce -bail -ow $i `mktemp`
+    t=`mktemp`.png
+    cp $i $t
+    pngcrush -reduce -bail -ow $t
+    mv $t $i
 done
