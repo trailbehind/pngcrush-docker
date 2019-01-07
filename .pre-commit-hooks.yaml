@@ -2,5 +2,5 @@
     name: pngcrush (via docker)
     description: Compress png images with pngcrush
     language: docker_image
-    entry: gaiagps/pngcrush:2.1.0
+    entry: gaiagps/pngcrush:2.2.0
     files: \.png$
