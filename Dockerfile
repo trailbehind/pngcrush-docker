@@ -6,4 +6,6 @@ RUN apt-get update -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/ /var/cache/apt/ /var/cache/debconf/
 
-ENTRYPOINT ["pngcrush", "-reduce", "-ow"]
+ADD process.sh /
+
+ENTRYPOINT ["/process.sh"]
